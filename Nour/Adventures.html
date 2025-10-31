@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📖 دفتر مغامراتنا</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@500&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(to bottom right, #f0e4d7, #c2b280);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Reem Kufi', sans-serif;
+  direction: rtl;
+}
+
+/* شكل الدفتر المفتوح */
+.book {
+  width: 90%;
+  max-width: 900px;
+  height: 550px;
+  border: 6px solid #462a08;
+  border-radius: 10px;
+  box-shadow: 0 0 50px rgba(0,0,0,0.6);
+  display: flex;
+  overflow: hidden;
+    background: #0a721b;
+}
+
+/* الصفحة الشمال (صور) */
+.left-page {
+  width: 50%;
+  padding: 30px;
+  box-sizing: border-box;
+  position: relative;
+  background: rgba(255, 247, 220, 0.9);
+  border-right: 3px solid #d4b483;
+}
+
+.photo {
+  width: 80%;
+  margin: 20px auto;
+  background: #fefae0;
+  padding: 10px;
+  border: 2px solid #b08968;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+  transform: rotate(-3deg);
+  position: relative;
+}
+
+.photo:nth-child(2) {
+  transform: rotate(2deg);
+}
+
+.photo img {
+  width: 100%;
+  border: 1px solid #b08968;
+}
+
+/* شريط لاصق */
+.tape {
+  width: 60px;
+  height: 20px;
+  background: rgba(255,255,200,0.7);
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-5deg);
+  border-radius: 3px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.2);
+}
+
+/* الصفحة اليمين (نص المغامرة) */
+.right-page {
+  width: 50%;
+  padding: 40px;
+  box-sizing: border-box;
+  background: rgba(255, 249, 230, 0.95);
+  font-size: 18px;
+  line-height: 1.8;
+  color: #3b2f19;
+  position: relative;
+}
+
+.right-page h2 {
+  color: #5a3e1b;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.right-page p {
+  text-align: justify;
+  white-space: pre-line;
+}
+
+/* زينة بسيطة */
+.corner {
+  position: absolute;
+  width: 60px;
+  opacity: 0.2;
+}
+
+.corner.top-left {
+  top: 10px;
+  left: 10px;
+  transform: rotate(180deg);
+}
+
+.corner.bottom-right {
+  bottom: 10px;
+  right: 10px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="book">
+  <!-- صفحة الصور -->
+  <div class="left-page">
+    <div class="photo">
+      <div class="tape"></div>
+      <img src="https://i.ibb.co/gPzKDqd/vintage-photo1.jpg" alt="ذكرياتنا 1">
+    </div>
+
+    <div class="photo">
+      <div class="tape"></div>
+      <img src="https://i.ibb.co/2s6Z7pB/vintage-photo2.jpg" alt="ذكرياتنا 2">
+    </div>
+  </div>
+
+  <!-- صفحة النص -->
+  <div class="right-page">
+    <h2>🌄 مغامرتنا في الطريق الطويل</h2>
+    <p>
+    اليوم دا مكنش عادي أبدًا...  
+    كنا ماشيين في طريق مش عارفين نهايته فين، بس كنا مبسوطين جدًا.  
+    ضحكنا على كل حاجة، حتى على التعب اللي كنا فيه.  
+    كل ما الشمس كانت تغيب، كنا نحس إننا عملنا حاجة جميلة النهارده.  
+    ويمكن علشان كده اللحظة دي لسه محفورة في قلبي ❤  
+    </p>
+
+    <img src="https://i.ibb.co/K9ct8C6/old-flower-deco.png" class="corner top-left">
+    <img src="https://i.ibb.co/K9ct8C6/old-flower-deco.png" class="corner bottom-right">
+  </div>
+</div>
+
+</body>
+</html>

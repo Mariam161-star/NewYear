@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Could you be my new year</title>
+  <style>
+    @font-face {
+      font-family: 'BitcountGridSingle';
+      src: url('Fonts/BitcountGridSingle.ttf') format('truetype'); /* مسار ملف الخط */
+    }
+
+    body {
+      font-family: sans-serif;
+      background: #cf82da; /* لون الخلفية */
+      display: flex;
+      flex-direction: column; /* جعل العناصر تظهر عموديًا */
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      overflow: hidden; /* لإخفاء الإيموجيز عند خروجها من الشاشة */
+    }
+
+    h1 {
+      text-align: center;
+      color: #32588d; /* لون النص */
+      font-family: 'BitcountGridSingle'; /* تطبيق الخط */
+      margin: 30px 0; /* مسافة بين النصوص */
+    }
+
+    h2 {
+      text-align: center;
+      color: #131212; /* لون النص */
+      font-family: "Cairo", sans-serif;
+      margin: 10px 0; /* مسافة بين النصوص */
+    }
+
+    h3 {
+      text-align: right; /* محاذاة النص لليمين */
+      color: #b36363; /* لون النص */
+      font-family: "Cairo", sans-serif;
+      margin-top: 100px;
+      margin-bottom: 0px; /* مسافة من الأعلى والأسفل */
+      font-size: 24px; /* حجم النص */
+    }
+
+    p {
+      text-align: center; /* محاذاة النص */
+      color: #0e0d0d; /* لون النص */
+      font-family: "Cairo", sans-serif; /* الخط */
+      margin-top: 0px; /* مسافة من الأعلى */
+    }
+
+    h4 {
+      text-align: right; /* محاذاة النص لليمين */
+      color: #b36363; /* لون النص */
+      font-family: "Cairo", sans-serif;
+      margin-bottom: 0px; /* مسافة من الأعلى والأسفل */
+      font-size: 24px; /* حجم النص */
+    }
+
+    h5 {
+      text-align: right; /* محاذاة النص لليمين */
+      color: #b36363; /* لون النص */
+      font-family: "Cairo", sans-serif;
+      margin-bottom: 0px; /* مسافة من الأعلى والأسفل */
+      font-size: 24px; /* حجم النص */
+    }
+
+    h6 {
+      text-align: center;
+      color: #131212; /* لون النص */
+      font-family: "Cairo", sans-serif;
+      margin: 10px 0; /* مسافة بين النصوص */
+      font-size: 18px; /* حجم النص */
+    }
+
+    .options {
+      display: flex;
+      justify-content: center;
+      gap: 20px; /* مسافة بين الأزرار */
+      margin-top: 20px; /* مسافة من النص العلوي */
+    }
+
+    .options button {
+      padding: 15px 30px;
+      font-size: 18px;
+      font-family: "Cairo", sans-serif;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .options button.yes {
+      background-color: #4caf50; /* لون زر Yes */
+      color: #fff;
+    }
+
+    .options button.yes:hover {
+      background-color: #45a049; /* لون عند التمرير */
+    }
+
+    .options button.no {
+      background-color: #f44336; /* لون زر No */
+      color: #fff;
+    }
+
+    .options button.no:hover {
+      background-color: #d32f2f; /* لون عند التمرير */
+    }
+
+    .emoji {
+      position: absolute;
+      font-size: 100px; /* حجم الإيموجي */
+      animation: float 5s linear infinite;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translate(0, 0);
+        opacity: 1;
+      }
+      100% {
+        transform: translate(100vw, -100vh);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+    <h1>For my best kanozaaaaa</h1>
+    <h2>بمناسبة انك عارفة اني بحب البرمجة ف حبيت اعملك حاجة مميزة تكون موجودة علي طول وتفضلي فكراني بيها علي طول وتسمحلنا باننا نحتفل بدخول 2026 بطريقة مختلفة وجديدة ف يارب الفكرة تعجبك واكون عملتها حلو برضو لان انتي اكيد عارفة اني ع قدي يعني وبعك وكده بقي 😂بس بحااااول والله عشان عايزة تطلع بيرفيكت اوي</h2>
+    <h3>:اوكيه اولا   </h3>
+    <p>عايزة اعرفك مدي حبي ليكي وانك اغلي واجمل حاجة حصلت في حياتي </p>
+    <h4> :تاني حاجة </h4>
+    <p>انا عارفة اني احيانا كتير بزعلك ومش ببقي احسن حد  بس بجد بحاول وبدعي ربنا كل يوم انه يساعدني ويديني القوة عشان افضل دايما احسن حاجة ليكي وابقي حاجة فعلا تستاهليها</p>
+    <h5> ثااالثاا بقي ياست الكل </h5>
+    <p>👀الموضوع اللي عاملة الويبسايت عشانه اصلااا بقي</p>
+    <h6>Do you wanna be my new year?😍</h6>
+
+    <!-- الخيارات -->
+    <div class="options">
+      <button class="yes" onclick="window.location.href='yes.html'">Yes</button>
+      <button class="no" onclick="handleNoClick()">No</button>
+    </div>
+
+    <script>
+      function handleNoClick() {
+        // إنشاء الإيموجي 😒 بحجم كبير
+        for (let i = 0; i < 10; i++) {
+          const emoji = document.createElement('div');
+          emoji.classList.add('emoji');
+          emoji.textContent = '😒';
+          emoji.style.left = Math.random() * 100 + 'vw';
+          emoji.style.top = Math.random() * 100 + 'vh';
+          emoji.style.animationDelay = Math.random() * 0.5 + 's';
+          document.body.appendChild(emoji);
+
+          // إزالة الإيموجي بعد 5 ثوانٍ
+          setTimeout(() => {
+            emoji.remove();
+          }, 5000);
+        }
+      }
+    </script>
+</body>
+</html>

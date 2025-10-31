@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery Page</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #d39ebf; /* لون الخلفية */
+      display: flex;
+      flex-direction: column; /* جعل العناصر تظهر عموديًا */
+      align-items: center;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333; /* لون النص */
+      font-size: 36px; /* حجم النص */
+      margin-bottom: 80px; /* مسافة بين العنوان والمعرض */
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 صور في كل صف */
+      gap: 50px; /* مسافة بين الصور */
+      width: 100%;
+      max-width: 900px; /* تحديد عرض المعرض */
+      margin-top: 20px; /* ← إضافة مسافة لتحريك الصور للأسفل */
+    }
+
+    .gallery-item {
+      text-align: center;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .gallery-item p {
+      margin-top: 20px; /* ← زيادة المسافة بين النص والصورة */
+      font-size: 16px;
+      color: #333;
+    }
+
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <!-- زر الرجوع -->
+  <a href="For_best_Kanoza.Html" class="back-button">Back</a>
+
+  <h1>The best memories</h1>
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="https://placekitten.com/300/200" alt="صورة 1">
+      <p>😍يعتبر اول ديت بينا </p>
+    </div>
+    <div class="gallery-item">
+      <img src="https://placebear.com/300/200" alt="صورة 2">
+      <p>😍احلي مورنينج ديت قضيناه </p>
+    </div>
+    <div class="gallery-item">
+      <img src="https://placeimg.com/300/200/nature" alt="صورة 3">
+      <p>صورة 3</p>
+    </div>
+    <div class="gallery-item">
+      <img src="https://placeimg.com/300/200/animals" alt="صورة 4">
+      <p>صورة 4</p>
+    </div>
+    <div class="gallery-item">
+      <img src="https://placeimg.com/300/200/arch" alt="صورة 5">
+      <p>صورة 5</p>
+    </div>
+    <div class="gallery-item">
+      <img src="https://placekitten.com/300/200" alt="صورة 6">
+      <p>صورة 6</p>
+    </div>
+    <!-- الصف الجديد -->
+    <div class="gallery-item">
+      <img src="https://placekitten.com/300/200" alt="صورة 7">
+      <p>صورة 7</p>
+    </div>
+    <div class="gallery-item">
+      <img src="https://placebear.com/300/200" alt="صورة 8">
+      <p>صورة 8</p>
+    </div>
+    <div class="gallery-item">
+      <img src="https://placeimg.com/300/200/nature" alt="صورة 9">
+      <p>صورة 9</p>
+    </div>
+  </div>
+</body>
+</html>
